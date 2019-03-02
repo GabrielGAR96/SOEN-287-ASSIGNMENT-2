@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>Question 2</title>
+
+</head>
+<body>
+<h1> Assignment 2 Question 2 </h1>
+	<script type="text/javascript">
+		var number = prompt("Please enter a number:");
+		var temp = new Array();
+		temp = number.split(",");
+		var array = new Array();
+		var odd = 0;
+		var even = 0;
+
+		var i = 0;
+		while(i < temp.length){
+			if(!(/^\s*$/).test(temp[i]))
+				temp[i] = Number(temp[i]);
+			if(Number.isInteger(temp[i]) && temp[i]>=0) 
+				array[i] = temp[i];
+			if(array[i] % 2 == 0)
+				even++;
+			else
+				if(array[i] % 2 == 1)
+				odd++;
+			i++;
+		}
+
+
+		document.write("<ul>")
+		document.write("<li>You entered a total " + array.length + " numbers</li>");
+		document.write("<li>You entered " + odd + " odd numbers</li>");
+		document.write("<li>You entered " + even + " even numbers</li>");
+		document.write("</ul>");
+	</script>
+	<p>
+
+</body>
+</html>

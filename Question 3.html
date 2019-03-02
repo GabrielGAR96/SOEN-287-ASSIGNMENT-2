@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>Question 3</title>
+</head>
+<body>
+	<script type="text/javascript">
+		var number = prompt("Please enter a number: ");
+		document.write("<table border='1', width = 50%>");
+		for (var i = 0; i <= number; i++) {
+			document.write("<tr>");
+			for (var j = 0; j <= number; j++) {
+				if(j != 0 && i != 0)
+				document.write("<td>" + i*j + "</td>");
+				else
+					document.write("<td>"+(i+j)+"</td>");
+			}
+			document.write("</tr>");
+		}
+		document.write("</table>");
+	</script>
+
+</body>
+</html>
